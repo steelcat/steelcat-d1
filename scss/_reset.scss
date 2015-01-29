@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/**
+  *
+  * Дополнительный сброс стилей
+  *
+  */
+
+// Сброс box-sizing
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+// Сброс body
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+  font-family: 'fira_sanslight', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+// Делаем элементы HTML5 блочными
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1, h2, h3 { font-weight: normal; margin: 0; padding: 0; }
+a, a:focus, a:hover, a:active { text-decoration: none; }
+ul, ol { margin: 0; padding: 0; list-style: outside none none; }
